@@ -1,0 +1,105 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+body {
+  position: relative;
+
+  font-family: var(--font1);
+
+  background-color: var(--color-1);
+  color: var(--color-white);
+  /* height: 100vh; */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font1);
+}
+
+/* reset */
+
+/* variables */
+:root {
+  --color-1: #131316;
+  --color-2: ;
+  --color-3: ;
+  --color-4: ;
+  --color-5: ;
+  --color-6: ;
+  --color-7: ;
+
+  --color-1-clr: ;
+  --color-2-clr: ;
+  --color-3-clr: ;
+  --color-4-clr: ;
+
+  --color-white: #ffffff;
+
+  --box-shadow-1: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  --duration1: 0.2s;
+  --duration2: 0.8s;
+
+  --font1: "Poppins", sans-serif;
+  --font2: "Raleway", sans-serif;
+  --font3: "Hind Vadodara", sans-serif;
+}
+
+/* variables */
+
+/* typo */
+/* typo */
+
+/* anime scroll */
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logos{
+  display: flex;
+  gap: 10px;
+}
+
+.logo:nth-child(2){
+  transition-delay: 200ms;
+}
+.logo:nth-child(3){
+  transition-delay: 500ms;
+}
+.logo:nth-child(4){
+  transition-delay: 800ms;
+}
+.logo:nth-child(5){
+  transition-delay: 1100ms;
+}
+
+/* anime scroll */
